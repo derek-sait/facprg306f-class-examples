@@ -28,7 +28,7 @@ export default function ContactList(){
     var contact5 = {
         fname: "Pamela",
         lname: "Kaikes",
-        email: "ja123@mail.ca",
+        email: "pamk@mail.ca",
         phone: "123-555-6789"
     }
 
