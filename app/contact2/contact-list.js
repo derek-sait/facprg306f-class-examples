@@ -6,14 +6,19 @@ import ContactCard from "./contact-card";
 
 export default function ContactList() {
   // map the JSON data to an array
-  let contactArray = contactData.map((contact) => ({ ...contact }));
+  let contactArray = contactData.map(
+    (contact) => ({ ...contact })
+    );
+
 
   // set up states for sorting and filtering
   let [sortBy, setSortBy] = useState("id");
   let [filter, setFilter] = useState("all");
 
+
   // sorting function
   contactArray = contactArray.sort((a, b) => {
+  
     if (isNaN(parseInt(a[sortBy]))) {
       // sort alphabetically
       let nameA = a[sortBy].toUpperCase(); // ignore upper and lowercase
@@ -33,7 +38,9 @@ export default function ContactList() {
 
   // filtering function
   if( filter != "all"){
-    contactArray = contactArray.filter((contact) => contact.type === filter);
+    contactArray = contactArray.filter(
+      (contact) => contact.type === filter
+      );
   }
 
   return (
