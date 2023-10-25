@@ -1,6 +1,7 @@
 import Contact from "./contact"
 
 export default function ContactList(){
+    
     var contact1 = {
         fname: "Jerry",
         lname: "Atrick",
