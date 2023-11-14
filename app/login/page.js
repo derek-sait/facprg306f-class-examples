@@ -30,6 +30,7 @@ export default function Page() {
         {user ? (
           <div>
             <p>Welcome, {user.displayName}</p>
+            <p>Your user ID is: {user.uid}</p>
             <img src={user.photoURL} className="w-8 h-8" />
             <button
             className="text-lg m-2 hover:underline"

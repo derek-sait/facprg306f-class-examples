@@ -106,7 +106,6 @@ export default function Gallery() {
         <Artwork key={art?.objectID} artwork={art} />
       ))}
 
-
     </section>
   );
 }
